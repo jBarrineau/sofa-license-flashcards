@@ -6,8 +6,8 @@ A single-page flashcard deck for the U.S. Forces Japan SOFA driver's permit test
 
 ## Features
 
-- **169 cards** across four topics — road signs (83), rules of the road (45), licensing & paperwork (22), signals & markings (19).
-- **93 embedded sign images**, so 89 of the cards show an actual Japanese road sign to identify.
+- **172 cards** across four topics — road signs (83), rules of the road (48), licensing & paperwork (22), signals & markings (19).
+- **93 embedded sign images and 3 manual diagrams**, so visual questions include the source material to identify.
 - **Self-grading loop** — after flipping, mark a card *Got it* or *Review*. Cards you send to review move to the back of the deck instead of disappearing.
 - **Progress persists** in `localStorage`, so your known/review marks survive a reload.
 - **Session sidebar** with known / review / unseen counts and a mastery percentage for the current topic.
@@ -16,7 +16,7 @@ A single-page flashcard deck for the U.S. Forces Japan SOFA driver's permit test
 
 ## Running it
 
-The whole app is one self-contained `index.html` — no build step, no dependencies, no server required. Open the file in a browser, or serve the directory:
+The app is static — no build step, dependencies, or server required. Open `index.html` in a browser, or serve the directory:
 
 ```sh
 python -m http.server 8000
