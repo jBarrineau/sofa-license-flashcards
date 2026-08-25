@@ -14,11 +14,12 @@ button,select{font:inherit}button{cursor:pointer}.shell{width:min(1080px,calc(10
 .kicker,.label,.counter,.keys{font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}.kicker{color:var(--muted);margin:0 0 5px}.brand{font-family:"Archivo Black",sans-serif;font-size:clamp(15px,3.5vw,38px);line-height:.95;margin:0;letter-spacing:0;white-space:nowrap}.brand small{display:block;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;color:var(--muted);margin-top:9px}.mastery{text-align:right}.mastery strong{display:block;font:600 24px "IBM Plex Mono",monospace}.mastery span{font-size:12px;color:var(--muted)}
 .toolbar{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:12px;margin:28px 0 16px}.topics{display:flex;gap:7px;overflow:auto;padding:2px}.topic,.iconbtn{border:1px solid var(--line);background:rgba(255,253,247,.7);color:var(--ink);min-height:38px}.topic{padding:8px 13px;white-space:nowrap}.topic[aria-pressed=true]{background:var(--road);border-color:var(--road);color:white}.topic .count{opacity:.55;margin-left:5px;font-family:"IBM Plex Mono",monospace;font-size:11px}.iconbtn{width:40px;font-size:18px;display:grid;place-items:center}.iconbtn:hover,.topic:hover{border-color:var(--ink)}
 .stage{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:22px;align-items:start}.progress{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}.track{height:9px;background:#dad7ce;overflow:hidden}.fill{height:100%;background:var(--blue);transition:width .3s}.counter{color:var(--muted)}
-.card-wrap{perspective:1200px;min-height:480px}.flashcard{position:relative;width:100%;min-height:480px;border:0;padding:0;background:none;text-align:left;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.75,.25,1)}.flashcard.flipped{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);padding:clamp(24px,5vw,52px);display:flex;flex-direction:column}.back{transform:rotateY(180deg);border-top:6px solid var(--blue)}.front{border-top:6px solid var(--road)}.face-head{display:flex;justify-content:space-between;gap:16px;color:var(--muted)}.question{font-size:clamp(24px,4vw,39px);line-height:1.16;letter-spacing:0;margin:auto 0;font-weight:700;max-width:850px}.sign{width:min(200px,45%);aspect-ratio:1;object-fit:contain;align-self:center;margin:20px auto 0}.reveal{align-self:center;color:var(--muted);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em}.answer-label{color:var(--blue);margin:22px 0 12px}.answer{font-size:clamp(25px,4vw,40px);line-height:1.12;font-weight:700;margin:0}.explain{font-size:17px;line-height:1.55;color:#454947;margin:22px 0 auto;max-width:760px}.source{font:500 12px "IBM Plex Mono",monospace;color:var(--muted);align-self:flex-start;margin-top:20px}
+.card-wrap{perspective:1200px;min-height:480px}.flashcard{position:relative;width:100%;min-height:480px;border:0;padding:0;background:none;text-align:left;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.75,.25,1)}.flashcard.flipped{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);padding:clamp(24px,5vw,52px);display:flex;flex-direction:column}.back{transform:rotateY(180deg);border-top:6px solid var(--blue)}.front{border-top:6px solid var(--road)}.face-head{display:flex;justify-content:space-between;gap:16px;color:var(--muted)}.question{font-size:clamp(24px,4vw,39px);line-height:1.16;letter-spacing:0;margin:auto 0;font-weight:700;max-width:850px}.sign{width:min(200px,45%);aspect-ratio:1;object-fit:contain;align-self:center;margin:20px auto 0}.sign.diagram{width:min(560px,92%);height:230px;aspect-ratio:auto}.reveal{align-self:center;color:var(--muted);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em}.answer-label{color:var(--blue);margin:22px 0 12px}.answer{font-size:clamp(25px,4vw,40px);line-height:1.12;font-weight:700;margin:0}.explain{font-size:17px;line-height:1.55;color:#454947;margin:22px 0 auto;max-width:760px}.source{font:500 12px "IBM Plex Mono",monospace;color:var(--muted);align-self:flex-start;margin-top:20px}
 .sidebar{border-left:1px solid var(--line);padding-left:20px}.sidebar h2{font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:2px 0 14px}.stat{padding:12px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between}.stat b{font-family:"IBM Plex Mono",monospace}.tip{font-size:13px;line-height:1.5;color:var(--muted);margin:20px 0}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.action{border:0;color:white;padding:14px 12px;font-weight:700;min-height:50px}.again{background:var(--red)}.got{background:var(--green)}.action:disabled{opacity:.35;cursor:not-allowed}.next{grid-column:1/-1;background:var(--road)}
 .hidden{display:none!important}.keys{color:var(--muted);line-height:1.8}
 @media(max-width:760px){.shell{width:min(100% - 20px,680px);padding-top:15px}.topbar{align-items:start}.mastery{display:none}.toolbar{grid-template-columns:1fr auto;margin-top:24px}.topics{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.topic{white-space:normal}.stage{grid-template-columns:1fr}.sidebar{border-left:0;border-top:1px solid var(--line);padding:16px 0 0}.card-wrap,.flashcard{min-height:430px}.face{padding:25px 22px}.question{font-size:26px}.answer{font-size:27px}.explain{font-size:15px}.keys{display:none}.actions{position:sticky;bottom:8px;background:var(--paper);padding-top:8px;z-index:2}}
 @media(prefers-reduced-motion:reduce){.flashcard,.fill{transition:none}}
+.sign[src^="assets/"]{width:min(560px,92%);height:230px;aspect-ratio:auto}
 </style>
 </head>
 <body>
@@ -46,6 +47,91 @@ BANK.push(
   {"cat": "rules", "q": "May a vehicle stop or park in this side lane?", "options": ["Yes, if hazard lights are on", "Yes, for less than five minutes", "No, stopping and parking are prohibited", "Only motorcycles may stop there"], "a": 2, "why": "The dashed edge line marks a side lane where vehicles may not stop or park.", "img": "side_lane_45", "alt": "Road diagram with dashed lines separating the side lanes", "p": 45},
   {"cat": "rules", "q": "Who may use this shoulder?", "options": ["Pedestrians only", "Pedestrians and bicycles", "Light vehicles and motorcycles", "Any vehicle making a left turn"], "a": 0, "why": "This shoulder is exclusively for pedestrians.", "img": "shoulder_46", "alt": "Road diagram with solid lines separating the shoulders", "p": 46}
 );
+
+Object.assign(IMAGES, {
+  "police_11": "assets/police-vehicles-page-11.png",
+  "police_wand_12": "assets/police-wand-page-12.png",
+  "bus_13": "assets/bus-right-of-way-page-13.png",
+  "pedestrian_14": "assets/pedestrian-visibility-page-14.png",
+  "big_intersection_15": "assets/big-intersection-page-15.png",
+  "tunnel_16": "assets/tunnel-page-16.png",
+  "plates_17": "assets/plate-types-page-17.png",
+  "white_box_40": "assets/white-box-page-40.png",
+  "crosswalk_diamonds_69": "assets/crosswalk-diamonds-page-69.png",
+  "turn_at_t_70": "assets/turn-at-t-page-70.png",
+  "green_light_71": "assets/green-light-page-71.png",
+  "yellow_light_72": "assets/yellow-light-page-72.png",
+  "red_light_73": "assets/red-light-page-73.png",
+  "green_arrow_74": "assets/green-arrow-page-74.png",
+  "yellow_arrow_75": "assets/yellow-arrow-page-75.png",
+  "flashing_yellow_76": "assets/flashing-yellow-page-76.png",
+  "flashing_red_77": "assets/flashing-red-page-77.png",
+  "broken_white_78": "assets/broken-white-page-78.png",
+  "solid_white_79": "assets/solid-white-page-79.png",
+  "solid_yellow_80": "assets/solid-yellow-page-80.png",
+  "passing_81": "assets/passing-page-81.png",
+  "double_passing_82": "assets/double-passing-page-82.png",
+  "reverse_parking_83": "assets/reverse-parking-page-83.png",
+  "right_turn_yields_84": "assets/right-turn-yields-page-84.png",
+  "narrow_road_86": "assets/narrow-road-page-86.png",
+  "toll_lanes_89": "assets/toll-lanes-page-89.png",
+  "toll_ticket_90": "assets/toll-ticket-page-90.png",
+  "toll_exit_91": "assets/toll-exit-page-91.png",
+  "etc_lane_92": "assets/etc-lane-page-92.png"
+});
+
+BANK.push(
+  {"cat": "rules", "q": "Before turning or changing lanes, what observation routine should you use?", "options": ["Check only the rearview mirror", "Check side mirrors, perform head checks in blind spots, and watch for smaller road users", "Rely on the vehicle's warning sensors", "Sound the horn and move immediately"], "a": 1, "why": "Always check side mirrors and blind spots, and look for scooters, motorcyclists, bicycles, and pedestrians before turning or changing lanes.", "p": 2},
+  {"cat": "rules", "q": "10 KPH is approximately how many MPH?", "options": ["3.1 MPH", "6.2 MPH", "9.3 MPH", "12.4 MPH"], "a": 1, "why": "10 KPH is approximately 6.2 MPH.", "p": 9},
+  {"cat": "rules", "q": "15 KPH is approximately how many MPH?", "options": ["6.2 MPH", "9.3 MPH", "12.4 MPH", "18.6 MPH"], "a": 1, "why": "15 KPH is approximately 9.3 MPH, the listed station parking-lot limit.", "p": 9},
+  {"cat": "rules", "q": "20 KPH is approximately how many MPH?", "options": ["9.3 MPH", "12.4 MPH", "18.6 MPH", "24.8 MPH"], "a": 1, "why": "20 KPH is approximately 12.4 MPH.", "p": 9},
+  {"cat": "rules", "q": "30 KPH is approximately how many MPH?", "options": ["12.4 MPH", "18.6 MPH", "24.8 MPH", "37.2 MPH"], "a": 1, "why": "30 KPH is approximately 18.6 MPH, the listed station school-zone limit.", "p": 9},
+  {"cat": "rules", "q": "60 KPH is approximately how many MPH?", "options": ["24.8 MPH", "31.1 MPH", "37.2 MPH", "49.7 MPH"], "a": 2, "why": "60 KPH is approximately 37.2 MPH.", "p": 9},
+  {"cat": "admin", "q": "What license is required to drive a SOFA vehicle in Japan?", "options": ["A valid SOFA license", "Any US state license", "An international driving permit only", "A Japanese learner's permit"], "a": 0, "why": "You must have a valid SOFA license to drive a SOFA vehicle in Japan.", "p": 17},
+  {"cat": "admin", "q": "What insurance coverage must a SOFA vehicle carry?", "options": ["No insurance on station", "Minimum coverage in accordance with SOFA rules", "JCI only", "Any US policy regardless of local coverage"], "a": 1, "why": "SOFA vehicles must carry the minimum insurance coverage required by SOFA rules.", "p": 17},
+  {"cat": "signals", "q": "What does the road warning 追突注意 mean?", "options": ["Watch for falling rocks", "Rear-end collision warning", "School zone ahead", "No overtaking"], "a": 1, "why": "追突注意 warns drivers to take care against rear-end collisions.", "p": 69}
+);
+
+const SOURCE_VISUALS = {
+  "A police car comes up behind you with its lights on and its siren and/or loudspeaker going. You must:": ["police_11", "Japanese police vehicles"],
+  "A police car is behind you with its lights on only — no siren or loudspeaker. You should:": ["police_11", "Japanese police vehicles"],
+  "A police officer directing traffic points the RED tip of the wand at you. This means:": ["police_wand_12", "Police officer directing traffic with a wand"],
+  "A police officer points the WHITE tip of the wand at you. This means:": ["police_wand_12", "Police officer directing traffic with a wand"],
+  "A bus at a stop switches on its right turn signal to pull into traffic. You should:": ["bus_13", "Bus preparing to enter traffic"],
+  "Children or elderly pedestrians crossing the road may use a yellow flag or raise their hand. This is to:": ["pedestrian_14", "Pedestrian route with roadside crossing signs"],
+  "When making a right turn at a large intersection while in the lead, you should:": ["big_intersection_15", "Large-intersection right-turn diagram"],
+  "Changing lanes inside an intersection is:": ["big_intersection_15", "Large-intersection lane diagram"],
+  "Inside a tunnel you must:": ["tunnel_16", "Tunnel entrance and headlight reminder"],
+  "Vehicles registered to SOFA personnel can be identified by which plate letters?": ["plates_17", "Examples of Japanese vehicle license plates"],
+  "Vehicles are prohibited from stopping in an area marked by:": ["white_box_40", "Street diagram showing a white boxed no-stopping area"],
+  "Where a vehicle may park and stop in the side lane, how much space must be left on the left side of the vehicle?": ["shoulder_44", "Road diagram showing the side lane and shoulder"],
+  "White diamonds painted on the road indicate:": ["crosswalk_diamonds_69", "White diamond road markings"],
+  "When making a right-hand turn at a small intersection, the rule of thumb is:": ["turn_at_t_70", "Turn-at-the-T road diagram"],
+  "A green light allows vehicles to:": ["green_light_71", "Green traffic light"],
+  "A yellow light requires vehicles to:": ["yellow_light_72", "Yellow traffic light"],
+  "At a red light in Japan, vehicles:": ["red_light_73", "Red traffic light"],
+  "A red light with a lit GREEN arrow means:": ["green_arrow_74", "Red traffic light with green arrow"],
+  "A red light with a lit YELLOW arrow means:": ["yellow_arrow_75", "Red traffic light with yellow arrow"],
+  "A flashing yellow light means:": ["flashing_yellow_76", "Flashing yellow traffic light"],
+  "A flashing red light means:": ["flashing_red_77", "Flashing red traffic light"],
+  "The center line is a BROKEN WHITE line. This means:": ["broken_white_78", "Passing diagram with a broken white center line"],
+  "The center line is a SOLID WHITE line. This means:": ["solid_white_79", "Passing diagram with a solid white center line"],
+  "The center line is a SOLID YELLOW line. This means:": ["solid_yellow_80", "Road diagram with a solid yellow center line"],
+  "When overtaking another vehicle, you normally pass:": ["passing_81", "Passing diagrams showing right-side passing and the turning exception"],
+  "The vehicle in front of you is already overtaking another vehicle. May you overtake them both?": ["double_passing_82", "Diagram showing prohibited double passing"],
+  "Why do drivers in Japan normally back into parking spaces?": ["reverse_parking_83", "Vehicles backed into Japanese parking spaces"],
+  "In Japan, which vehicle has the right of way at an intersection?": ["right_turn_yields_84", "Diagram showing a right-turning vehicle yielding"],
+  "On narrow two-way roads with only one lane, you should:": ["narrow_road_86", "Narrow two-way road in Japan"],
+  "You are paying an expressway toll with cash or a credit card. Which lane do you use?": ["toll_lanes_89", "ETC and General toll-lane signs"],
+  "What do you do at the ENTRANCE tollgate of an expressway when paying cash?": ["toll_ticket_90", "Expressway entrance ticket machine guidance"],
+  "At the EXIT tollgate, cash payment must be made in:": ["toll_exit_91", "Expressway toll attendant"],
+  "ETC (Electronic Toll Collection) is most similar to which US system?": ["etc_lane_92", "ETC expressway tollgates"]
+};
+
+BANK.forEach(card => {
+  const visual = SOURCE_VISUALS[card.q];
+  if (visual) Object.assign(card, {img: visual[0], alt: visual[1], wide: true});
+});
 
 const CATS = [
   {id:"all",   label:"Everything"},
