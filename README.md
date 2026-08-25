@@ -12,6 +12,7 @@ A single-page flashcard deck for the U.S. Forces Japan SOFA driver's permit test
 - **Progress persists** in `localStorage`, so your known/review marks survive a reload.
 - **Session sidebar** with known / review / unseen counts and a mastery percentage for the current topic.
 - **Topic filter and shuffle**, plus a reset button to clear all progress.
+- **Sourced answers** — every answer footer links to the exact page of `Training for SOFA License.pdf` in the repo, opened in a new tab.
 - **Keyboard driven** — `Space` to flip, `1` for review, `2` for got it, `←`/`→` to move through the deck.
 
 ## Running it
@@ -36,7 +37,8 @@ Cards live in the `BANK` array inside `index.html`. Each entry looks like:
   "a": 2,                      // index of the correct option — shown as the answer
   "why": "…explanation…",
   "img": null,                 // key into IMAGES, or null
-  "p": 1                       // study guide page number
+  "p": 1                       // page in Training for SOFA License.pdf; the answer's
+                               // source line links to that page
 }
 ```
 
